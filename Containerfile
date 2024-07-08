@@ -10,4 +10,8 @@ WORKDIR /app
 COPY --from=BUILDER ["/app", "/app"]
 COPY ["index.mjs", "./"]
 
+LABEL org.opencontainers.image.source=https://github.com/claudio4/leveldb-viewer
+LABEL org.opencontainers.image.description="Tool to easily explore LevelDB databases."
+LABEL org.opencontainers.image.licenses=MIT
+
 ENTRYPOINT ["/nodejs/bin/node", "/app/index.mjs"]
