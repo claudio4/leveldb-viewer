@@ -8,7 +8,7 @@ node index.mjs /path/to/leveldb/folder
 
 That will offer the webUI at port 3000. The port can be changed with the `NODE_PORT` environment variable.
 
-It can be also be used via Docker/Podman trough an image at ghrc.io/claudio4/leveldb-viewer.
+It can be also be used via Docker/Podman trough an image at ghcr.io/claudio4/leveldb-viewer.
 ```bash
-docker run --rm -p 3000:3000 -v /path/to/leveldb/folder:/data ghrc.io/claudio4/leveldb-viewer /data
+docker run --rm -p 3000:3000 -v /path/to/leveldb/folder:/data ghcr.io/claudio4/leveldb-viewer /data
 ```
